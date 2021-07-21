@@ -1,7 +1,7 @@
 # Pandas
 
 instalar
-pip install numpy pandas pymssql sqlalchemy
+pip install numpy pandas pymssql sqlalchemy pyarrow fastparquet tables
 
 e importar 
 import numpy as np
