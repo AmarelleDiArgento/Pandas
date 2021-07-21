@@ -1,0 +1,15 @@
+version: "3.1"
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2019-CU3-ubuntu-18.04
+    user: '0:0'
+    container_name: mssql-2019
+    volumes:
+      - ./mssql/data:/var/opt/mssql/data
+    restart: always
+    ports:
+      - 1433:1433
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: 4dm1nPr0c
+      MSSQL_PID: Express
